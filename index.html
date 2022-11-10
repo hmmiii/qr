@@ -1,0 +1,23 @@
+<script>
+    var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+    var link = '';
+    location.href = link;
+    location.replace(link);
+    window.open(link);
+    if (varUA.indexOf('android') > -1) {
+        //안드로이드
+        link = 'https://play.google.com/store/apps/details?id=com.dmonster.zipsaya&hl=ko';
+        location.href = link;
+        location.replace(link);
+        window.open(link);
+    } else if (varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 || varUA.indexOf("ipod") > -1) {
+        //IOS
+        link = 'https://apps.apple.com/kr/app/%EC%A7%91%EC%82%AC%EC%95%BC-%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC-%ED%98%B8%ED%85%94-%EB%AF%B8%EC%9A%A9-%EC%9C%A0%EC%B9%98%EC%9B%90-%EB%93%B1-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%98%88%EC%95%BD/id1626614641';
+        location.href = link;
+        location.replace(link);
+        window.open(link);
+    } else {
+        //아이폰, 안드로이드 외
+        alert('안드로이드, 아이폰만 지원합니다.');
+    }
+</script>
